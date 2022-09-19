@@ -7,8 +7,49 @@
     box-sizing: border-box
     font-family: 'Lato'
 
+  body
+    background-color: $bg-color
+    color: $text-color
+
   a
     text-decoration: none
 
   li
     list-style: none  
+
+@mixin main-hover()
+  transition: .5s
+
+  &:hover
+    color: $primary-color
+
+      //Botões
+.btn
+  padding: .6rem 1.3rem
+  border: 1px solid $light-color
+  border-radius: 4px
+  transition: .5s
+  color: $light-color
+
+  &:hover
+    border-color: $primary-color
+    color: $primary-color
+  
+  &-primary
+    background-color: $primary-color
+    border-color: $primary-color
+    color: $dark-color !important
+    
+    &:hover
+      background-color: $black
+      color: $primary-color !important
+  
+  &-rounded
+    margin-top: 1rem
+    border-radius: 2rem
+    padding: 1rem 1.5rem
+
+
+//PLACEHOLDER SELECTOR
+%title-text-shadow
+  text-shadow: 3px 2px $black
