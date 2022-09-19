@@ -1,5 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 body {
-  background-color: #eee5e5;
+  background-color: #191919;
 }
 
 /*# sourceMappingURL=styles.css.map */
